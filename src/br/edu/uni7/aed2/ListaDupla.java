@@ -23,7 +23,6 @@ public class ListaDupla {
         No aux = inicio;
         if (aux == null){
             System.out.printf("Lista vazia");
-
         }else{
             while (aux != null) {
                 System.out.printf("%d\n", aux.valor);

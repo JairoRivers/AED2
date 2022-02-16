@@ -19,5 +19,16 @@ public class Main {
 
             listaDupla.busca(300);
 
+            for (int i = 0; i < 1_000_000; i++) {
+                listaDupla.inserir(i);
+            }
+
+            //listaDupla.imprimir();
+
+            long inicio = System.currentTimeMillis();
+            listaDupla.reverter();
+            long fim = System.currentTimeMillis();
+            long tempoTotal = fim - inicio;
+            System.out.println(tempoTotal + " ms");
         }
 }

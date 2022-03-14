@@ -1,4 +1,4 @@
-package br.edu.uni7.aed2;
+package br.edu.uni7.aed2.AED1ListaDupla;
 
 public class Main {
         public static void main (String [] args){

@@ -1,4 +1,4 @@
-package br.edu.uni7.aed2;
+package br.edu.uni7.aed2.AED1ListaDupla;
 
 public class ListaDupla {
 
@@ -33,26 +33,21 @@ public class ListaDupla {
         }
     }
 
-    public int busca(int valor) {
+    public boolean busca(int valor) {
         No aux = inicio;
         if (aux == null) {
             System.out.println("Lista vazia para busca");
-            return 0;
         } else {
             while (aux != null) {
                 if (aux.valor == valor) {
                     System.out.println("Valor: " + valor + " encontrado na lista");
-                    return aux.valor;
+                    return true;
                 } else {
                     aux = aux.proximo;
                 }
-                if (aux == null){
-                    System.out.println("Valor: " + valor + "  não encontrado na lista");
-                    return 0;
-                }
             }
         }
-        return 0;
+        return false;
     }
 
     public void remover (int valor) {
